@@ -1,0 +1,32 @@
+.logo{
+    width: 20%;
+    
+    margin-left: 5%;
+}
+
+.loginButton{
+    color: gray;
+    margin-right: 20px;
+
+}
+
+.signUp{
+    border-radius: 20px;
+    width: 100px;
+    
+}
+
+.loginButton:hover{
+   color: black;
+}
+
+.buttons{
+   margin-right: 10%;
+
+}
+
+.signUp:hover{
+    background-color:royalblue;
+    border: 1px solid royalblue;
+}
+    
