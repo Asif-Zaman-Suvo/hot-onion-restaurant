@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Card, Col, Container, Row, Tab, Tabs } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { CartContext } from '../../App';
 import fakeData from '../../fakeData/fakeData';
 import './Foods.css';
@@ -23,18 +24,20 @@ const Foods = () => {
 
                 <Col className='my-3' md={4}>
 
-                    <Card style={{ width: '18rem', height: '100%' }}>
+                   <Link to={`/foodDetails/${food.type}-${food.id}`}> 
+                   <Card className="cardFood" style={{ width: '18rem', height: '100%' }}>
                         <Card.Img variant="top" className=" mx-auto p-2  w-50" src={food.images} />
-                        <Card.Body className='justify-content-center'>
-                            <Card.Title><h1>{food.name}</h1></Card.Title>
-                            <Card.Text>
-                                <h5>{food.shortDescription}</h5>
-                                <h6>$ {food.price}</h6>
+                        <Card.Body className='align-items-center justify-content-center'>
+                            <Card.Title className="text-center"><h3>{food.name}</h3></Card.Title>
+                            <Card.Text className="text-center">
+                                <p style={{color: 'black'}}>{food.shortDescription}</p>
+                                <h6 style={{color: 'black'}}>$ {food.price}</h6>
 
                             </Card.Text>
 
                         </Card.Body>
                     </Card>
+                   </Link>
 
                 </Col>
 

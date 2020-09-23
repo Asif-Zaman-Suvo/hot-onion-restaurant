@@ -60,7 +60,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 7,
+        id: 1,
         name: "Healthy Meal Plan",
        images: "https://i.ibb.co/HTqG4SR/lunch1.png",
         type: "Lunch",
@@ -70,7 +70,7 @@ let fakeData=[
        fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 8,
+        id: 2,
         name: "Fried chicken bento",
         images: "https://i.ibb.co/cDmzmWL/lunch2.png",
         type: "Lunch",
@@ -80,7 +80,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 9,
+        id: 3,
         name: "Tarragon-Rubbed-Salmon        ",
         images: "https://i.ibb.co/zSn50D1/lunch3.png",
         type: "Lunch",
@@ -90,7 +90,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 10,
+        id: 4,
         name: "Indian Lunch",
         images: "https://i.ibb.co/cD7bkZ4/lunch4.png",
         type: "Lunch",
@@ -100,7 +100,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 11,
+        id: 5,
         name: "Beef Steak",
         images: "https://i.ibb.co/SQjgyY2/lunch5.png",
         type: "Lunch",
@@ -110,7 +110,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 12,
+        id: 6,
         name: "Honey-Soy-Glazed Salmon with Peppers",
         images: "https://i.ibb.co/z4t2tj7/lunch6.png",
         type: "Lunch",
@@ -120,7 +120,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 13,
+        id: 1,
         name: "Salmon with Grapefruit and Lentil Salad",
         images: "https://i.ibb.co/5nD8Bfs/dinner1.png",
         type: "Dinner",
@@ -130,7 +130,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 14,
+        id: 2,
         name: "Lemony Salmon Piccata",
         images: "https://i.ibb.co/JptGXgV/dinner2.png",
         type: "Dinner",
@@ -140,7 +140,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 15,
+        id: 3,
         name: "Pork Tenderloin With Quinoa Pilaf",
         images: "https://i.ibb.co/RSn0Hsf/dinner3.png",
         type: "Dinner",
@@ -150,7 +150,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 16,
+        id: 4,
         name: "French fries with cheese",
        images: "https://i.ibb.co/QfktpHF/dinner4.png",
         type: "Dinner",
@@ -160,7 +160,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 17,
+        id: 5,
         name: "Garlic Butter Baked Salmon",
         images: "https://i.ibb.co/w6kCTK1/dinner5.png",
         type: "Dinner",
@@ -170,7 +170,7 @@ let fakeData=[
         fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
-        id: 18,
+        id: 6,
         name: "Baked Chicken",
         images: "https://i.ibb.co/MRH5Mjm/dinner6.png",
         type: "Dinner",

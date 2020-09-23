@@ -8,7 +8,7 @@ const Header = () => {
     return (
 
 
-        <Navbar collapseOnSelect expand="md" bg="white" variant="white" sticky="top">
+        <Navbar collapseOnSelect expand="md" bg="white" variant="light" sticky="top">
             <Container fluid>
             <Navbar.Brand >
                <Link to="/"> <img className="logo" src={logo} alt="" /></Link>

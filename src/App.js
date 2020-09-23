@@ -13,6 +13,7 @@ import {
 import Foods from './Components/Foods/Foods';
 import ChooseUs from './Components/ChooseUs/ChooseUs';
 import Footer from './Components/Footer/Footer';
+import FoodDetails from './Components/FoodDetails/FoodDetails';
 
 export const CartContext = createContext();
 export const UserContext = createContext();
@@ -38,7 +39,7 @@ function App() {
       <Router>
       <Header></Header>
       <Switch>
-        <Route path="/">
+        <Route exact path="/">
           <Background></Background>
           <Foods></Foods>
           <ChooseUs></ChooseUs>
@@ -46,6 +47,11 @@ function App() {
 
         </Route>
       </Switch>
+
+      <Route path="/foodDetails/:foodType-:foodId">
+        <FoodDetails></FoodDetails>
+
+      </Route>
 
 
 
