@@ -18,7 +18,7 @@ const Background = () => {
 
 
 
-            <h1 style={{marginLeft:''}}>Best Food is Waiting For You</h1>
+            <h1>Best Food is Waiting For You</h1>
             <br></br>
 
             <input className="inputSearch" type="text" placeholder=" Search the food....."/>

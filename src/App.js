@@ -11,6 +11,8 @@ import {
   Link
 } from "react-router-dom";
 import Foods from './Components/Foods/Foods';
+import ChooseUs from './Components/ChooseUs/ChooseUs';
+import Footer from './Components/Footer/Footer';
 
 export const CartContext = createContext();
 export const UserContext = createContext();
@@ -39,6 +41,8 @@ function App() {
         <Route path="/">
           <Background></Background>
           <Foods></Foods>
+          <ChooseUs></ChooseUs>
+          <Footer></Footer>
 
         </Route>
       </Switch>
