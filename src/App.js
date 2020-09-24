@@ -39,6 +39,8 @@ function App() {
       <Router>
       <Header></Header>
       <Switch>
+
+
         <Route exact path="/">
           <Background></Background>
           <Foods></Foods>
@@ -48,7 +50,8 @@ function App() {
         </Route>
       </Switch>
 
-      <Route path="/foodDetails/:foodType-:foodId">
+      <Route path="/foodDetails/:foodName">
+        
         <FoodDetails></FoodDetails>
 
       </Route>

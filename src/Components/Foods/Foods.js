@@ -12,7 +12,7 @@ const lunch = fakeData.filter(foods => foods.type === 'Lunch')
 const dinner = fakeData.filter(foods => foods.type === 'Dinner')
 
 const Foods = () => {
-    const [cart] = useContext(CartContext);
+   
 
 
     const newFood = type => {
@@ -24,11 +24,12 @@ const Foods = () => {
 
                 <Col className='my-3' md={4}>
 
-                   <Link to={`/foodDetails/${food.type}-${food.id}`}> 
+                   <Link className='foodLink' to={`/foodDetails/${food.name}`}> 
+                   
                    <Card className="cardFood" style={{ width: '18rem', height: '100%' }}>
                         <Card.Img variant="top" className=" mx-auto p-2  w-50" src={food.images} />
                         <Card.Body className='align-items-center justify-content-center'>
-                            <Card.Title className="text-center"><h3>{food.name}</h3></Card.Title>
+                            <Card.Title className="text-center"><h3 style={{color: 'black'}}>{food.name}</h3></Card.Title>
                             <Card.Text className="text-center">
                                 <p style={{color: 'black'}}>{food.shortDescription}</p>
                                 <h6 style={{color: 'black'}}>$ {food.price}</h6>

@@ -30,4 +30,10 @@
     border: 1px solid royalblue;
 }
 
-  
+
+
+.navbar{
+    -webkit-box-shadow: 0px 9px 10px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 9px 10px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 9px 10px -8px rgba(0,0,0,0.75);
+}

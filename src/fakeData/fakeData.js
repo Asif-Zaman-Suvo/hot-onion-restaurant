@@ -1,4 +1,4 @@
-let fakeData=[
+let fakeData = [
     {
         id: 1,
         name: "Bagel And Cream Cheese",
@@ -62,12 +62,12 @@ let fakeData=[
     {
         id: 1,
         name: "Healthy Meal Plan",
-       images: "https://i.ibb.co/HTqG4SR/lunch1.png",
+        images: "https://i.ibb.co/HTqG4SR/lunch1.png",
         type: "Lunch",
         price: 23.99,
         shortDescription: "How to Dream About Your Future",
 
-       fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
+        fullDescription: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto harum, est modi nobis quisquam minus dicta voluptatum delectus? Cumque sapiente accusantium officiis laboriosam, corporis id sint. Quam rem recusandae necessitatibus unde repellat commodi animi velit iure, soluta aut saepe est."
     },
     {
         id: 2,
@@ -152,7 +152,7 @@ let fakeData=[
     {
         id: 4,
         name: "French fries with cheese",
-       images: "https://i.ibb.co/QfktpHF/dinner4.png",
+        images: "https://i.ibb.co/QfktpHF/dinner4.png",
         type: "Dinner",
         price: 8.99,
         shortDescription: "How to Dream About Your Future",
