@@ -6,7 +6,7 @@ import './Checkout.css';
 
 const CheckOut = () => {
 
-
+    const [loggedInUser]=useContext(UserContext);
     const [cart, setCart] = useContext(CartContext);
 
 

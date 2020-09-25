@@ -62,7 +62,7 @@ const Foods = () => {
 
     return (
         <Container>
-            <Tabs className='mt-4 justify-content-center border-0' defaultActiveKey="Lunch" transition={false} id="noanim-tab-example">
+            <Tabs style={{marginRight:'5%'}} className=' mt-4 justify-content-center border-0' defaultActiveKey="Lunch" transition={false} id="noanim-tab-example">
 
 
                 <Tab eventKey="Breakfast" title="Breakfast">

@@ -16,6 +16,9 @@ import Footer from './Components/Footer/Footer';
 import FoodDetails from './Components/FoodDetails/FoodDetails';
 import CheckOut from './Components/Checkout/CheckOut';
 import OrderComplete from './Components/OrderComplete/OrderComplete';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import LogIn from './Components/LogIn/LogIn';
+
 
 export const CartContext = createContext();
 export const UserContext = createContext();
@@ -23,7 +26,7 @@ export const UserContext = createContext();
 function App() {
 
   const [cart, setCart] = useState([]);
-  const [user, setUser] = useState({
+  const [loggedInUser, setLoggedInUser] = useState({
 
     isSignedIn: false,
     name: '',
@@ -37,7 +40,7 @@ function App() {
 
 
     <CartContext.Provider value={[cart, setCart]}>
-      <UserContext.Provider value={[user, setUser]}>
+      <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
       <Header></Header>
       <Switch>
@@ -58,10 +61,20 @@ function App() {
 
       </Route>
 
-      <Route path="/checkout">
+      
+      
+      <PrivateRoute path="/checkout">
         <CheckOut></CheckOut>
 
+      </PrivateRoute>
+
+      <Route path="/login">
+       <LogIn></LogIn>
+
       </Route>
+
+      
+
 
       <Route path='/orderComplete'>
         <OrderComplete></OrderComplete>

@@ -9,7 +9,7 @@ import cartLogo from './Path 1.png';
 const Header = () => {
 
     const [cart]=useContext(CartContext)
-    const [user,setUser]=useContext(UserContext)
+    const [loggedInUser,setLoggedInUser]=useContext(UserContext)
     const totalFood=cart.reduce((sum,foodDetails)=>sum+foodDetails.count,0)
 
 
@@ -30,23 +30,34 @@ const Header = () => {
 
                 </Nav>
                 <Nav>
-
-
-                    <Nav.Link>
-                       
+      
                           <Link to="/checkout">
                           <Button variant="transparent m-0 p-0"> 
                                <h6 className='m-0 p-0'>{totalFood}</h6>
                                     <img  src={cartLogo} alt=""/>
                            </Button>
                           </Link>
+
+                         {
+                             loggedInUser.isSignedIn ?
+                              <Button onClick={()=>setLoggedInUser({
+
+                                isSignedIn: false,
+                                name: '',
+                                email: '',
+                                password: '',
+                                success: '',
+                                error:''
+
+                              })} variant='danger ml-5'>{loggedInUser.name}</Button>:
+
+                              <Link to='/login'><Button variant='danger ml-5'>Login</Button></Link>
                            
+                         }
                          
-                        <Button className='loginButton' variant="white">Login</Button>
-                    </Nav.Link>
-                    <Nav.Link eventKey={2} href="#">
-                        <Button className='signUp' variant="danger">Sign Up</Button>
-                    </Nav.Link>
+                       
+                   
+                   
                 </Nav>
             </Navbar.Collapse>
             </Container>
