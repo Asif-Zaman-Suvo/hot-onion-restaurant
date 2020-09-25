@@ -1,9 +1,10 @@
-import React, { useContext } from 'react';
-import { Card, Col, Container, Row, Tab, Tabs } from 'react-bootstrap';
+import React, { useContext, useState } from 'react';
+import { Button, Card, Col, Container, Row, Tab, Tabs } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../App';
 import fakeData from '../../fakeData/fakeData';
 import './Foods.css';
+
 
 
 
@@ -12,6 +13,9 @@ const lunch = fakeData.filter(foods => foods.type === 'Lunch')
 const dinner = fakeData.filter(foods => foods.type === 'Dinner')
 
 const Foods = () => {
+
+    const [cart]=useContext(CartContext)
+   
    
 
 
@@ -29,7 +33,7 @@ const Foods = () => {
                    <Card className="cardFood" style={{ width: '18rem', height: '100%' }}>
                         <Card.Img variant="top" className=" mx-auto p-2  w-50" src={food.images} />
                         <Card.Body className='align-items-center justify-content-center'>
-                            <Card.Title className="text-center"><h3 style={{color: 'black'}}>{food.name}</h3></Card.Title>
+                            <Card.Title className="text-center"><h4 style={{color: 'black'}}>{food.name}</h4></Card.Title>
                             <Card.Text className="text-center">
                                 <p style={{color: 'black'}}>{food.shortDescription}</p>
                                 <h6 style={{color: 'black'}}>$ {food.price}</h6>
@@ -58,7 +62,7 @@ const Foods = () => {
 
     return (
         <Container>
-            <Tabs className='mt-4 justify-content-center border-0' defaultActiveKey="Breakfast" transition={false} id="noanim-tab-example">
+            <Tabs className='mt-4 justify-content-center border-0' defaultActiveKey="Lunch" transition={false} id="noanim-tab-example">
 
 
                 <Tab eventKey="Breakfast" title="Breakfast">
@@ -92,6 +96,29 @@ const Foods = () => {
 
                 </Tab>
             </Tabs>
+            <br/>
+            <br/>
+
+
+           <Row>
+               <Col md={4}></Col>
+               <Col md={4}> 
+
+               {
+                   cart.length>0 && 
+                   
+                   <Link to='/checkout'>
+                   <Button variant='danger ml-5'>Checkout The Food</Button>
+                   
+                   </Link>
+               }
+              
+                   
+               </Col>
+               <Col md={4}></Col>
+
+
+           </Row>
         </Container>
 
     );

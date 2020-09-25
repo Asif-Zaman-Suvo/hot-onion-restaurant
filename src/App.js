@@ -14,6 +14,7 @@ import Foods from './Components/Foods/Foods';
 import ChooseUs from './Components/ChooseUs/ChooseUs';
 import Footer from './Components/Footer/Footer';
 import FoodDetails from './Components/FoodDetails/FoodDetails';
+import CheckOut from './Components/Checkout/CheckOut';
 
 export const CartContext = createContext();
 export const UserContext = createContext();
@@ -53,6 +54,11 @@ function App() {
       <Route path="/foodDetails/:foodName">
         
         <FoodDetails></FoodDetails>
+
+      </Route>
+
+      <Route path="/checkout">
+        <CheckOut></CheckOut>
 
       </Route>
 
