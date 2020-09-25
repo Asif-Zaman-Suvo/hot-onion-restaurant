@@ -32,12 +32,14 @@ const Header = () => {
                 <Nav>
 
 
-                    <Nav.Link href="#">
+                    <Nav.Link>
                        
-                           <Button variant="transparent m-0 p-0"> 
+                          <Link to="/checkout">
+                          <Button variant="transparent m-0 p-0"> 
                                <h6 className='m-0 p-0'>{totalFood}</h6>
                                     <img  src={cartLogo} alt=""/>
                            </Button>
+                          </Link>
                            
                          
                         <Button className='loginButton' variant="white">Login</Button>

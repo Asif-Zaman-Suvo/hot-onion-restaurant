@@ -15,6 +15,7 @@ import ChooseUs from './Components/ChooseUs/ChooseUs';
 import Footer from './Components/Footer/Footer';
 import FoodDetails from './Components/FoodDetails/FoodDetails';
 import CheckOut from './Components/Checkout/CheckOut';
+import OrderComplete from './Components/OrderComplete/OrderComplete';
 
 export const CartContext = createContext();
 export const UserContext = createContext();
@@ -60,6 +61,10 @@ function App() {
       <Route path="/checkout">
         <CheckOut></CheckOut>
 
+      </Route>
+
+      <Route path='/orderComplete'>
+        <OrderComplete></OrderComplete>
       </Route>
 
 

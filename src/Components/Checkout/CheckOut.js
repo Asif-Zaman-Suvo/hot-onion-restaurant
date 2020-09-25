@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { CartContext, UserContext } from '../../App';
 import './Checkout.css';
 
@@ -26,9 +27,9 @@ const CheckOut = () => {
 
     return (
         <Container>
-
-
-            <Row>
+            {
+                cart.length>0 ? 
+                <Row>
 
 
                 <Col className='mt-5' md={6}>
@@ -103,8 +104,7 @@ const CheckOut = () => {
                         )
                     }
 
-                    {
-                        cart.length > 0 ?
+                   
 
                             <Row className='mt-5 bg-light'>
                                 <Col md={6}>
@@ -122,23 +122,27 @@ const CheckOut = () => {
 
 
                                 </Col>
+                                
 
-                                <Button size='lg' block style={{ backgroundColor: "#F91944", border: 'none' }}>Place Order</Button>
+                                <Link class="btn btn-danger mt-5 mb-5 btn-lg btn-block border-0" to='/orderComplete'>
+                                <button class="btn btn-danger mx-0 btn-lg btn-block border-0" type="button" >Place Order</button>
+                                </Link>
 
                             </Row>
-
-                            : "At First Add Some Food to cart"
-
-                    }
-
-
-
-
-
                 </Col>
 
             </Row>
 
+            : <h1 className='text-center mt-5'>"At First Add Food to Cart"</h1>
+
+
+
+
+
+            }
+
+
+            
         </Container>
     );
 };
