@@ -5,12 +5,31 @@ import { CartContext, UserContext } from '../../App';
 import logo from '../../Images/logo2.png';
 import './Header.css'
 import cartLogo from './Path 1.png';
+import * as firebase from "firebase/app";
+import "firebase/auth";
 
 const Header = () => {
 
-    const [cart]=useContext(CartContext)
+    const [cart]=useContext(CartContext);
+    
     const [loggedInUser,setLoggedInUser]=useContext(UserContext)
     const totalFood=cart.reduce((sum,foodDetails)=>sum+foodDetails.count,0)
+
+
+    function signOut(){
+        firebase.auth().signOut()
+        .then(()=>setLoggedInUser({
+            
+            isSignedIn: false,
+            name: '',
+            email: '',
+            password: '',
+            success: '',
+            error:''
+
+        })) 
+        .catch(error=>console.log(error))
+    }
 
 
     return (
@@ -40,16 +59,7 @@ const Header = () => {
 
                          {
                              loggedInUser.isSignedIn ?
-                              <Button onClick={()=>setLoggedInUser({
-
-                                isSignedIn: false,
-                                name: '',
-                                email: '',
-                                password: '',
-                                success: '',
-                                error:''
-
-                              })} variant='danger ml-5'>{loggedInUser.name}</Button>:
+                              <Button onClick={signOut} variant='danger ml-5'>SignOut ,{loggedInUser.name}</Button>:
 
                               <Link to='/login'><Button variant='danger ml-5'>Login</Button></Link>
                            

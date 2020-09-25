@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import map from './Map.png';
 import './OrderComplete.css';
 import biker from './Bike.png';
 import helmetBike from './helmet.png';
+import { UserContext } from '../../App';
 
 const OrderComplete = () => {
+
+    const [loggedInUser,setLoggedInUser]=useContext(UserContext)
+    const [user,setUser]=useContext(UserContext)
+
     return (
         <Container>
             <Row>
@@ -39,7 +44,7 @@ const OrderComplete = () => {
 
                             </Col>
                             <Col md={9}>
-                                <h3>Hamim</h3>
+                                <h3>{loggedInUser.name}</h3>
                                 <p style={{ color: 'gray' }}>Your Raider</p>
                             </Col>
 
